@@ -1,3 +1,5 @@
+#Team 8: Ian Purnell, Michael Spotts, Keller Ellison, Allan Foote, Grant Alston
+
 """
 Django settings for missingpersons project.
 
