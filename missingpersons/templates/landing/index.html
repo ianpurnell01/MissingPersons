@@ -1,24 +1,6 @@
+{% extends 'base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="{% static 'css/base.css' %}" rel="stylesheet"/>
-    <link href="{% static 'css/index.css' %}" rel="stylesheet"/>
-    <title>Missing Persons</title>
-</head>
-<body>
-<div class="row" style="background-color: #f3f17e; text-align: center;">
-    <div class="col">
-        <h2 class="banner">
-            If you have any information regarding these individuals<br/>
-            Please call the clearinghouse at (385) 499-1421 or (385) 499-5500</h2>
-    </div>
-</div>
-<div class="row">
-    <div class="colSM">
+{% block content %}
     <h1>You Can Help</h1>
     <p>
         You may not be Magnum P.I. or Columbo, but it isn't about super detectives. Less than 1% of missing persons cases are solved,<br>
@@ -199,5 +181,5 @@
         </tbody></table>
     </div>
 </div>
-</body>
-</html>
+{% endblock %}
+
