@@ -15,9 +15,15 @@
 <nav class="navbar navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="{% url 'index' %}">Missing Persons</a>
-        <button class="btn btn-sm btn-outline-secondary" type="button"><a class="nav-item " href="{% url 'database' %}">Database</a></button>
-        <button class="btn btn-sm btn-outline-secondary" type="button"><a class="nav-item " href="{% url 'resources' %}">Resources</a></button>
-        <button class="btn btn-sm btn-outline-secondary" type="button"><a class="nav-item " href="{% url 'index' %}">Home</a></button>
+        <a class="nav-item " href="{% url 'database' %}">
+            <button class="btn btn-sm btn-outline-secondary" type="button"> Database</button>
+        </a>
+        <a class="nav-item " href="{% url 'resources' %}">
+            <button class="btn btn-sm btn-outline-secondary" type="button">Resources</button>
+        </a>
+        <a class="nav-item " href="{% url 'index' %}">
+            <button class="btn btn-sm btn-outline-secondary" type="button">Home</button>
+        </a>
     </div>
 </nav>
 <div class="row" style="background-color: #f3f17e; text-align: center;">
