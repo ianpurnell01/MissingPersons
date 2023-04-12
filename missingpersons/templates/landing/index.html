@@ -1,10 +1,25 @@
 {% extends 'base.html' %}
 {% load static %}
 {% block content %}
-    <h1 style="text-align: center;">You Can Help</h1>
-    <p style="text-align: center;">
-        You may not be Magnum P.I. or Columbo, but it isn't about super detectives. Less than 1% of missing persons cases are solved,<br>
-        and that number can only be increased with help from average, everyday citizens.
-    </p>
+    <!-- Header - set the background image for the header in the line below-->
+    <header class="py-5 bg-image-full" style="background-image: url('https://source.unsplash.com/wfh8dDlNFOk/1600x900')">
+        <div class="text-center my-5">
+            <img class="img-fluid rounded-circle mb-4" src="https://dummyimage.com/150x150/6c757d/dee2e6.jpg" alt="..." />
+            <h1 class="text-white fs-3 fw-bolder">Full Width Pics</h1>
+            <p class="text-white-50 mb-0">Landing Page Template</p>
+        </div>
+    </header>
+    <!-- Content section-->
+    <section class="py-5">
+        <div class="container my-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-6">
+                    <h2>You Can Help</h2>
+                    <p class="lead">You may not be Magnum P.I. or Columbo, but it isn't about super detectives. Less than 1% of missing persons cases are solved,<br>
+                        and that number can only be increased with help from average, everyday citizens.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 {% endblock %}
 
