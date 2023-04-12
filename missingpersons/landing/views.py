@@ -8,3 +8,5 @@ def indexPageView (request) :
 def databasePageView (request) :
     return render(request, 'landing/database.html')
 
+def resourcePageView (request) :
+    return render(request, 'landing/resources.html')
