@@ -9,3 +9,4 @@ class Person(models.Model) :
     state = models.CharField(max_length=45)
     gender = models.CharField(max_length=1)
     race = models.CharField(max_length=1)
+    photo = models.ImageField(upload_to='photos')
