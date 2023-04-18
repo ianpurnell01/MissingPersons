@@ -2,5 +2,10 @@
 {% block content %}
 
 <h1>This is the page for {{data.first_name}}  {{data.last_name}}</h1>
+<p>No picture available<p>
+<p> {{data.first_name}} went missing on {{data.date_at_missing}} at the age of {{data.missing_age}}.<p>
+<p> {{data.first_name}} was living in the {{data.city}} city area at the time.<p>
+<p> {{data.first_name}} is a {{data.race.capitalize()}} {{data.gender.capitalize()}}<p>
+
 
 {% endblock %}
