@@ -1,11 +1,29 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>This is the page for {{data.first_name}}  {{data.last_name}}</h1>
-<p>No picture available<p>
-<p> {{data.first_name}} went missing on {{data.date_at_missing}} at the age of {{data.missing_age}}.<p>
-<p> {{data.first_name}} was living in the {{data.city}} city area at the time.<p>
-<p> {{data.first_name}} is a {{data.race}} {{data.gender}}<p>
-
-
+<h1 style="text-align: center;">{{data.first_name}}  {{data.last_name}}</h1>
+<center>
+    <form>
+        <label>Missing Date</label>
+        <input type="text" value="{{data.date_at_missing}}" readonly>
+        <br>
+        <label>Age at Missing</label>
+        <input type="text" value="{{data.missing_age}}" readonly>
+        <br>
+        <label>City</label>
+        <input type="text" value="{{data.city}}" readonly>
+        <br>
+        <label>Gender</label>
+        <input type="text" value="{{data.gender}}" readonly>
+        <br>
+        <label>Race</label>
+        <input type="text" value="{{data.race}}" readonly>
+        <br>
+        <label>Have any tips?</label>
+        <input type="text" value="">
+        <br>
+        <input type="submit">
+        
+    </form>
+</center>
 {% endblock %}
