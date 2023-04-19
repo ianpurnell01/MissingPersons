@@ -1,29 +1,71 @@
 {% extends 'base.html' %}
 {% block content %}
+<style>
+input {
+    margin-bottom: 8%;
+}
+.content {
+    margin-left: 3%;
+}
+.bottom-line {
+    border-bottom-style: solid;
+    text-align: center;
+    padding-bottom: .3em;
+    margin-bottom: 5%;   
+}
 
-<h1 style="text-align: center;">{{data.first_name}}  {{data.last_name}}</h1>
-<center>
-    <form>
-        <label>Missing Date</label>
-        <input type="text" value="{{data.date_at_missing}}" readonly>
-        <br>
-        <label>Age at Missing</label>
-        <input type="text" value="{{data.missing_age}}" readonly>
-        <br>
-        <label>City</label>
-        <input type="text" value="{{data.city}}" readonly>
-        <br>
-        <label>Gender</label>
-        <input type="text" value="{{data.gender}}" readonly>
-        <br>
-        <label>Race</label>
-        <input type="text" value="{{data.race}}" readonly>
-        <br>
-        <label>Have any tips?</label>
-        <input type="text" value="">
-        <br>
-        <input type="submit">
-        
-    </form>
-</center>
-{% endblock %}
+
+</style>
+
+<div class="row">
+    <div class="col-4">
+    </div>
+    <div class="col-4">
+        <h1 class="bottom-line">{{data.first_name}}  {{data.last_name}}</h1>
+    </div>
+    <div class="col-4">
+    </div>
+</div>
+<form>
+    <div class="row">
+        <div class="row">
+            <div class="col-3">
+            </div>
+            <div class="col-3 content content-left">
+                <label>Missing Date</label>
+                <br>
+                <input type="text" value="{{data.date_at_missing}}" readonly>
+                <br>
+                <label>Age at Missing</label>
+                <br>
+                <input type="text" value="{{data.missing_age}}" readonly>
+                <br>
+                <label>City</label>
+                <br>
+                <input type="text" value="{{data.city}}" readonly>
+            </div>
+            <div class="col-3 content content-right">
+                <label>Gender</label>
+                <br>
+                <input type="text" value="{{data.gender}}" readonly>
+                <br>
+                <label>Race</label>
+                <br>
+                <input type="text" value="{{data.race}}" readonly>
+                <br>
+                <label>Have any tips?</label>
+                <br>
+                <input type="text" value="">
+                <br>
+            </div>
+            <div class="col-3">
+            </div>
+        </div>
+        <div class="row">
+            <center>
+                <input type="submit">
+            </center>
+        </div>
+    </div> 
+</form>
+\{% endblock %}
